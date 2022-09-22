@@ -37,6 +37,10 @@ body {
 p {
     font-size: 1.8rem;
 }
+
+a {
+    color: inherit;
+}
 section {
     margin-bottom: 2.4rem;
 }
@@ -176,6 +180,8 @@ nav {
     object-fit: contain;
     max-width: 15rem;
     max-height: 10rem;
+    filter: brightness(0);
+    opacity: 0.6;
 }
 
 /* ABOUT */
@@ -220,10 +226,35 @@ min-height: 0.5vh;
 /*  GALLERY */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.25 vh 0.25vh;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: 30vh 30vh 30vh;
     gap: 1.8rem;
+    overflow: hidden;
+    max-width: 120rem;
+    margin: 0 auto;
+    align-content: center;
 }
+
+.gallery-item {
+    overflow: hidden;
+
+    height: 30vh;
+    width: 25vw;
+    
+    
+}
+.gallery-item:hover {
+    transform: scale(105%);  
+    opacity: 0.5;
+    cursor: pointer;
+    
+}
+
+.gallery-item img {
+   width: 100%;
+    object-fit: cover;
+}
+
 
 /* JOIN  */
 
@@ -245,7 +276,7 @@ min-height: 0.5vh;
 
  .subtle {
     color: var(--dark);
-    font-size: 1rem;
+    font-size: 1.2rem;
 
  }
 
@@ -254,6 +285,9 @@ min-height: 0.5vh;
     min-width: 25%;
     min-height: 3.0rem;
     background-color: var(--back-color);
+ }
+ form p {
+    margin-bottom: 1.8rem;
  }
 
  .form-button {
