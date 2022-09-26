@@ -1,0 +1,161 @@
+/*
+Typography
+Spacing system 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+Font-weight: 400 / 500 / 700
+
+Line-height: 1 / 
+
+Font-size system 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+Yt
+*/
+@media (max-width: 83em) {
+    section {
+        margin-bottom: 1.8rem;
+    }
+    .page-header::after {
+        width: 30vw;
+
+    }
+    nav {
+        max-width: 50%;
+       
+     }
+    form p {
+        margin-bottom: 0.2rem;
+     }
+
+     form p:last-of-type {
+        margin-bottom: 1.2rem;
+     }
+
+}
+@media (max-width: 51em) {
+ 
+    .hero-section {
+        gap: 2.4rem;
+        min-height: 80vh;
+        justify-content: space-evenly;
+        
+    }
+    .hero-section h1 {
+        font-size: 5.2rem;
+        max-width: 70%;
+    }
+    .page-header {
+        padding: 0.2rem;
+    }
+    .hero-button {
+        max-width: 50%;
+        font-size: 2.4rem;
+        
+    }
+     nav {
+        max-width: 100%;
+        margin-bottom: 3.0rem;
+        gap: 0.4rem;
+     }
+    
+}
+@media (max-width: 40em) {
+
+    body {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    main {
+        width: 100%;
+    }
+   
+    .hero-section {
+        gap: 2.4rem;
+        min-height: 50vh;
+        justify-content: space-evenly;
+        padding-left: 0.8rem;
+    }
+   
+    .hero-section h1 {
+        font-size: 3.6rem;
+        max-width: 90%;
+    }
+    .page-header {
+        padding: 0.2rem;
+    }
+    .page-header::after {
+        width: 100%;
+        height: 40vh;
+        left: 0;
+        bottom: 0;
+        top: 60%
+    }
+    .hero-button {
+        max-width: 70%;
+        font-size: 1.8rem;
+        
+    }
+     nav {
+        max-width: 100%;
+        margin-bottom: 2.0rem;
+        gap: 0.4rem;
+     }
+     .nav-item a:link,
+     .nav-item a:visited {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+}
+    .main-partners-grid  {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+}
+    .main-partners-item img {
+        max-width: 10rem;
+}
+.main-partners-text {
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+    
+}
+    .main-about p{
+        column-count: 1;
+    }
+
+    .main-about {
+        margin-bottom: 1.2rem;
+        width: 100%;
+    }
+    .main-news {
+        padding: 0.8rem;
+        width: 100%;
+    }
+    .main-news-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 7.4rem);
+    }
+    .news-time {
+        margin-bottom: 0.3rem;
+    }
+
+    .gallery-grid {
+        max-width: 90vw;
+    }
+    .main-join {
+        padding: 0.8rem;
+        max-width: 100%;
+    }
+    input {
+        min-width: 75%;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-item:nth-of-type(2) {
+        background-color: var(--dark);
+    color: var(--back-color);
+     }
+}
+
+
+
+
+

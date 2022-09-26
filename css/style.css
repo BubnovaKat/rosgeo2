@@ -11,6 +11,9 @@ Font-size system 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 
 Yt
 */
 
+ html {
+    overflow-x: hidden;
+ }
 * {
     padding: 0;
     margin: 0;
@@ -32,6 +35,7 @@ body {
     color: var(--grey-color);
     background-color: var(--back-color);
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 p {
@@ -43,6 +47,9 @@ a {
 }
 section {
     margin-bottom: 2.4rem;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 .visually-hidden {
     max-width: 1px;
@@ -67,18 +74,16 @@ nav {
     justify-content: flex-start;
     gap: 2rem;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 4.8rem;
     flex-wrap: wrap;
+    
 }
 
 .nav-item {
     display: inline-block;
     
 }
-.nav-item img {
-    max-width: 10rem;
-    
-}
+
 
 .nav-item a:link,
 .nav-item a:visited {
@@ -88,11 +93,13 @@ nav {
     font-weight: 700;
     padding: 1.2rem;
     
+    
 }
 .nav-item a:hover,
 .nav-item a:active {
     background-color: var(--dark);
     color: var(--back-color);
+    
 
 }
 
@@ -103,7 +110,7 @@ nav {
     display: inline-block;
     background: url('../img/hero+.jpeg') no-repeat;
     background-size: cover;
-    width: 50vw;
+    width: 49vw;
     height: 100vh;
     position: absolute;
     right: 0;
@@ -130,6 +137,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     gap: 3.2rem;
+    padding-left: 1.2rem;
+    min-height: 80vh;
 }
 
 .hero-button {
@@ -160,7 +169,7 @@ nav {
 /* PARTNERS */
 
 .main-partners-text {
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     margin-bottom: 4.8rem;
 }
 .main-partners-grid {
@@ -224,21 +233,22 @@ min-height: 0.5vh;
 }
 
 /*  GALLERY */
+
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 25vw);
-    grid-template-rows: 30vh 30vh 30vh;
-    gap: 1.8rem;
+    grid-template-rows: repeat(3, 15vw);
+    gap: 2.4rem;
     overflow: hidden;
-    max-width: 120rem;
+    max-width: 80vw;
     margin: 0 auto;
     align-content: center;
 }
 
 .gallery-item {
     overflow: hidden;
-
-    height: 30vh;
+    height: 15vw;
     width: 25vw;
     
     
@@ -286,8 +296,13 @@ min-height: 0.5vh;
     min-height: 3.0rem;
     background-color: var(--back-color);
  }
+ input::placeholder {
+    font-size: 1.4rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+ }
  form p {
-    margin-bottom: 1.8rem;
+    margin-bottom: 0.8rem;
  }
 
  .form-button {
@@ -315,18 +330,25 @@ grid-template-columns: repeat(3, 1fr);
  }
 
  .icon {
-    max-width: 18px;
+    max-width: 16px;
     margin-right: 0.8rem;
+    
  }
 
  .footer-item {
     padding: 0.8rem;
+    
  }
  .footer-item:nth-of-type(2) {
     background-color: var(--darker);
  }
 
- .footer-item:nth-of-type(3) {
+ .footer-item:nth-of-type(odd) {
     background-color: var(--dark);
     color: var(--back-color);
+ }
+ .contacts-text {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
  }
